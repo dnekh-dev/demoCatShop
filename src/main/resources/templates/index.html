@@ -2,9 +2,20 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/main.css}">
     <title>demoCatShop</title>
 </head>
 <body>
-    <h1 th:text="${hello}"/>
+    <header class="container">
+        <span class="logo">demoCatShop</span>
+        <nav>
+            <a href="/">Home page</a>
+            <a href="/about-us">About Us</a>
+        </nav>
+    </header>
+    <main class="container">
+
+    </main>
+    <footer>All rights reserved</footer>
 </body>
 </html>
