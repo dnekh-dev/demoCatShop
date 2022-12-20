@@ -3,6 +3,7 @@ package com.dnekh.democatshop.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
@@ -14,8 +15,9 @@ public class MainController {
     }
 
     @GetMapping("/about-us")
-    public String getAboutUs(Model model) {
-        model.addAttribute("about", "Here is you can find all needing information about us!");
+    public String getAboutUs(@RequestParam(name = "userName", required = false,
+            defaultValue = "something goes wrong!") String userName, Model model) {
+        model.addAttribute("about", userName);
         return "aboutUs";
     }
 }
