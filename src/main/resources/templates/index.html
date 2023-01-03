@@ -6,16 +6,16 @@
     <title>demoCatShop</title>
 </head>
 <body>
-    <header class="container">
-        <span class="logo">demoCatShop</span>
-        <nav>
-            <a href="/">Home page</a>
-            <a href="/about-us">About Us</a>
-        </nav>
-    </header>
+    <div th:replace="~{layouts/header :: header}"></div>
+    <div class="presentation">
+        <img src="https://club.foto.ru/gallery/images/preview/2011/02/17/1719742.jpg" alt="Cat">
+        <h2>Hello Kitty</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam cumque dolor fugit iste
+            perferendis quasi quis unde veniam vero.</p>
+    </div>
     <main class="container">
 
     </main>
-    <footer>All rights reserved</footer>
+    <div th:replace="~{layouts/footer :: footer}"></div>
 </body>
 </html>

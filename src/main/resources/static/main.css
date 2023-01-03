@@ -11,19 +11,19 @@ img {
 }
 
 body {
-    background: deepskyblue;
+    /*background: deepskyblue;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
 a {
     text-decoration: none;
-    color: mintcream;
+    color: #106EFD;
     transition: color 500ms ease;
 }
 
 a:hover {
-    color: royalblue;
+    color: lightskyblue;
 }
 
 .container {
@@ -37,10 +37,11 @@ header {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 30px;
+    min-height: 65px;
 }
 
 header .logo {
-    color: #222;
+    color: #106EFD;
     font-weight: 600;
     font-size: 25px;
 }
@@ -49,8 +50,55 @@ header nav a {
     margin-left: 15px;
 }
 
+div.block {
+    width: 80%;
+    min-height: 100px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid silver;
+    border-bottom-width: 2px ;
+    background: white;
+    line-height: 170%;
+}
+
+.presentation {
+    float: left;
+    width: 100%;
+    background: #ff6477;
+    padding: 50px 200px;
+    margin-bottom: 70px;
+}
+
+.presentation img {
+    float: right;
+    width: 300px;
+    /*margin-left: 40px;*/
+}
+
+.presentation h2 {
+    color: white;
+    font-size: 35px;
+    padding-top: 90px;
+}
+
+.presentation p {
+    color: white;
+    font-size: 16px;
+    padding-top: 7px;
+    max-width: 650px;
+}
+
+main.container {
+    min-height: 500px;
+}
+
 footer {
     margin-top: 50px;
     margin-bottom: 100px;
     text-align: center;
+    max-height: 300px;
+}
+
+footer p {
+    color: #106EFD;
 }

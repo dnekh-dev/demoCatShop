@@ -6,6 +6,15 @@
     <title>demoAboutUs</title>
 </head>
 <body>
-    <h1 th:text="'Hello, ' + ${about}"/>
+    <div th:replace="~{layouts/header :: header}"></div>
+
+    <div class="container">
+        <div class="block">
+            <!--        <h1 th:text="'Hello, ' + ${about}"/>-->
+            <p>Some text is here</p>
+        </div>
+    </div>
+
+    <div th:replace="~{layouts/footer :: footer}"></div>
 </body>
 </html>
