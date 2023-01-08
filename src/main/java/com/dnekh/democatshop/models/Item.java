@@ -31,4 +31,12 @@ public class Item {
     @Setter
     private int price;
 
+    public Item() {}
+
+    public Item(String title, String info, String img, int price) {
+        this.title = title;
+        this.info = info;
+        this.img = img;
+        this.price = price;
+    }
 }

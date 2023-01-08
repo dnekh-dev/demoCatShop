@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/main.css}">
+  <title>Add product</title>
+</head>
+<body>
+<div th:replace="~{layouts/header :: header}"></div>
+
+<main class="container">
+  <h1>Form of adding new goods</h1>
+  <form method="post">
+    <input type="text" name="title" placeholder="Enter product name">
+    <input type="text" name="img" placeholder="Enter an URL of photo">
+    <input type="number" name="price" placeholder="Enter a price of good">
+    <textarea name="info" placeholder="Enter a description"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+
+<div th:replace="~{layouts/footer :: footer}"></div>
+</body>
+</html>
