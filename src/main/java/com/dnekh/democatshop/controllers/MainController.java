@@ -1,5 +1,6 @@
 package com.dnekh.democatshop.controllers;
 
+import com.dnekh.democatshop.models.Item;
 import com.dnekh.democatshop.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,7 +16,10 @@ public class MainController {
 
     @GetMapping("/")
     public String getIndex(Model model) {
-        model.addAttribute("hello", "Hello Kitty Super Mors!");
+        //get all the data from database
+        Iterable<Item> items = itemRepository.findAll();
+        //passing that data into the templates
+        model.addAttribute("items", items);
         return "index";
     }
 
